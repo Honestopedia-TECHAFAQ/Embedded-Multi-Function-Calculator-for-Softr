@@ -9,11 +9,11 @@
 </head>
 <body>
     <div id="calculator">
-        <h2>Multi-Function Calculator for Softr</h2>
+        <h2>Versatile Calculator</h2>
+
+        <!-- Manual Input Section -->
         <div id="manual-inputs" class="input-group">
-            <label>Manual Inputs <span class="tooltip">ℹ
-                <span class="tooltiptext">Enter up to 8 numbers.</span>
-            </span></label>
+            <label>Manual Inputs</label>
             <input type="number" class="calc-input" placeholder="Enter a number" />
             <input type="number" class="calc-input" placeholder="Enter a number" />
             <input type="number" class="calc-input" placeholder="Enter a number" />
@@ -23,10 +23,10 @@
             <input type="number" class="calc-input" placeholder="Enter a number" />
             <input type="number" class="calc-input" placeholder="Enter a number" />
         </div>
+
+        <!-- Dropdown Input Section -->
         <div id="dropdown-inputs" class="input-group">
-            <label>Dropdown Inputs <span class="tooltip">ℹ
-                <span class="tooltiptext">Choose a number from the dropdown.</span>
-            </span></label>
+            <label>Dropdown Inputs</label>
             <select class="calc-dropdown">
                 <option value="10">10</option>
                 <option value="20">20</option>
@@ -49,29 +49,30 @@
                 <option value="50">50</option>
             </select>
         </div>
+
+        <!-- Slider Input Section -->
         <div id="slider-inputs" class="input-group">
-            <label>Slider Inputs <span class="tooltip">ℹ
-                <span class="tooltiptext">Adjust the slider to select a value.</span>
-            </span></label>
+            <label>Slider Inputs</label>
             <input type="range" min="0" max="100" value="50" class="calc-slider" />
             <input type="range" min="0" max="100" value="50" class="calc-slider" />
             <input type="range" min="0" max="100" value="50" class="calc-slider" />
         </div>
+
+        <!-- Operation Buttons -->
         <div id="operations">
-            <button onclick="performCalculation('add')"><i class="fas fa-plus"></i> Add</button>
-            <button onclick="performCalculation('subtract')"><i class="fas fa-minus"></i> Subtract</button>
-            <button onclick="performCalculation('multiply')"><i class="fas fa-times"></i> Multiply</button>
-            <button onclick="performCalculation('divide')"><i class="fas fa-divide"></i> Divide</button>
-            <button onclick="performCalculation('percentage')"><i class="fas fa-percent"></i> Percentage</button>
-            <button onclick="performCalculation('average')"><i class="fas fa-chart-line"></i> Average</button>
-            <button onclick="performCalculation('max')"><i class="fas fa-angle-up"></i> Max</button>
-            <button onclick="performCalculation('min')"><i class="fas fa-angle-down"></i> Min</button>
-            <button onclick="clearInputs()"><i class="fas fa-undo"></i> Clear</button>
+            <button onclick="performCalculation('add')">Add</button>
+            <button onclick="performCalculation('subtract')">Subtract</button>
+            <button onclick="performCalculation('multiply')">Multiply</button>
+            <button onclick="performCalculation('divide')">Divide</button>
+            <button onclick="performCalculation('percentage')">Percentage</button>
         </div>
+
+        <!-- Results Display -->
         <div id="results">
             <p>Result: <span id="calc-result">0</span></p>
         </div>
     </div>
+
 
     <script src="script.js"></script>
 </body>
