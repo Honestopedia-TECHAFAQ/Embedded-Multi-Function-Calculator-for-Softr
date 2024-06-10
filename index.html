@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Versatile Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div id="calculator">
+        <h2>Multi-Function Calculator for Softr</h2>
+        <div id="manual-inputs" class="input-group">
+            <label>Manual Inputs <span class="tooltip">ℹ
+                <span class="tooltiptext">Enter up to 8 numbers.</span>
+            </span></label>
+            <input type="number" class="calc-input" placeholder="Enter a number" />
+            <input type="number" class="calc-input" placeholder="Enter a number" />
+            <input type="number" class="calc-input" placeholder="Enter a number" />
+            <input type="number" class="calc-input" placeholder="Enter a number" />
+            <input type="number" class="calc-input" placeholder="Enter a number" />
+            <input type="number" class="calc-input" placeholder="Enter a number" />
+            <input type="number" class="calc-input" placeholder="Enter a number" />
+            <input type="number" class="calc-input" placeholder="Enter a number" />
+        </div>
+        <div id="dropdown-inputs" class="input-group">
+            <label>Dropdown Inputs <span class="tooltip">ℹ
+                <span class="tooltiptext">Choose a number from the dropdown.</span>
+            </span></label>
+            <select class="calc-dropdown">
+                <option value="10">10</option>
+                <option value="20">20</option>
+                <option value="30">30</option>
+                <option value="40">40</option>
+                <option value="50">50</option>
+            </select>
+            <select class="calc-dropdown">
+                <option value="10">10</option>
+                <option value="20">20</option>
+                <option value="30">30</option>
+                <option value="40">40</option>
+                <option value="50">50</option>
+            </select>
+            <select class="calc-dropdown">
+                <option value="10">10</option>
+                <option value="20">20</option>
+                <option value="30">30</option>
+                <option value="40">40</option>
+                <option value="50">50</option>
+            </select>
+        </div>
+        <div id="slider-inputs" class="input-group">
+            <label>Slider Inputs <span class="tooltip">ℹ
+                <span class="tooltiptext">Adjust the slider to select a value.</span>
+            </span></label>
+            <input type="range" min="0" max="100" value="50" class="calc-slider" />
+            <input type="range" min="0" max="100" value="50" class="calc-slider" />
+            <input type="range" min="0" max="100" value="50" class="calc-slider" />
+        </div>
+        <div id="operations">
+            <button onclick="performCalculation('add')"><i class="fas fa-plus"></i> Add</button>
+            <button onclick="performCalculation('subtract')"><i class="fas fa-minus"></i> Subtract</button>
+            <button onclick="performCalculation('multiply')"><i class="fas fa-times"></i> Multiply</button>
+            <button onclick="performCalculation('divide')"><i class="fas fa-divide"></i> Divide</button>
+            <button onclick="performCalculation('percentage')"><i class="fas fa-percent"></i> Percentage</button>
+            <button onclick="performCalculation('average')"><i class="fas fa-chart-line"></i> Average</button>
+            <button onclick="performCalculation('max')"><i class="fas fa-angle-up"></i> Max</button>
+            <button onclick="performCalculation('min')"><i class="fas fa-angle-down"></i> Min</button>
+            <button onclick="clearInputs()"><i class="fas fa-undo"></i> Clear</button>
+        </div>
+        <div id="results">
+            <p>Result: <span id="calc-result">0</span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
