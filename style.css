@@ -1,136 +1,54 @@
-body {
-    font-family: 'Arial', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: #f3f3f3;
-    margin: 0;
-}
-
-#calculator {
-    width: 90%;
-    max-width: 600px;
-    padding: 20px;
-    background-color: #ffffff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    text-align: center;
-    transition: all 0.3s ease;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-#calculator:hover {
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-}
-
-h2 {
-    color: #333;
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-.input-group {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-bottom: 20px;
-}
-
-.input-group label {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 5px;
-    font-weight: bold;
-    color: #555;
-}
-
-.tooltip {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-    color: #007bff;
-}
-
-.tooltip .tooltiptext {
-    visibility: hidden;
-    width: 160px;
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px;
-    position: absolute;
-    z-index: 1;
-    bottom: 125%;
-    left: 50%;
-    margin-left: -80px;
-    opacity: 0;
-    transition: opacity 0.3s;
-}
-
-.tooltip:hover .tooltiptext {
-    visibility: visible;
-    opacity: 1;
-}
-
-.input-group input[type="number"],
-.input-group select,
-.input-group input[type="range"] {
-    width: calc(100% - 20px);
-    padding: 10px;
-    margin: 5px 0;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-sizing: border-box;
-    transition: border-color 0.2s, box-shadow 0.2s;
-}
-
-.input-group input[type="number"]:focus,
-.input-group select:focus,
-.input-group input[type="range"]:focus {
-    border-color: #007bff;
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
-}
-
-#operations {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    margin-top: 20px;
-}
-
-#operations button {
-    padding: 10px;
-    border: none;
-    background-color: #007bff;
-    color: #fff;
-    border-radius: 5px;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: background-color 0.2s, transform 0.1s;
-}
-
-#operations button i {
-    margin-right: 5px;
-}
-
-#operations button:hover {
-    background-color: #0056b3;
-    transform: scale(1.05);
-}
-
-#operations button:active {
-    transform: scale(1);
-}
-
-#results {
-    margin-top: 20px;
-    font-size: 1.4em;
-    color: #333;
-}
+ body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f3f3f3;
+        }
+        #calculator {
+            width: 100%;
+            max-width: 600px;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            text-align: center;
+        }
+        .input-group {
+            margin-bottom: 15px;
+        }
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .input-group input[type="number"],
+        .input-group select,
+        .input-group input[type="range"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        #operations {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-around;
+        }
+        #operations button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #007bff;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #operations button:hover {
+            background-color: #0056b3;
+        }
+        #results {
+            margin-top: 20px;
+            font-size: 1.2em;
+            color: #333;
+        }
